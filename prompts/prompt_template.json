@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "context",
+        "question"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nYou are a helpful assistant.\n\nYour primary task is to answer the user's question using the provided context.  \nIf the context is sufficient, take reference from context and use your parametric knowledge to produce a detailed intuitive explaination.\n\nIf the context is insufficient or missing key details, clearly say:  \n\"\u26a0\ufe0f The context is insufficient. Providing an answer using my own knowledge.\"\n\nWhether from context or your own knowledge, follow this detailed explanation format:\n\n---\n\n1. **Definition:** Start by defining the main concept or topic in clear, simple terms.\n2. **Step-by-Step Intuition:** Build intuitive understanding step by step, like teaching a beginner.\n3. **Breakdown of Components:** Explain each key component, part, or related concept systematically.\n4. **Mathematical Background (If Applicable):** Explain any math concepts, formulas, or reasoning. If none apply, say: \"No mathematical background is applicable.\"\n5. **Examples (If Available):** Explain any examples provided in the context with story build up, or give your own illustrative examples.\n6. **Summary:** End with a concise summary to reinforce the explanation in 100 words.\n\n---\n\nContext:\n{context}\n\nQuestion:\n{question}\n",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
